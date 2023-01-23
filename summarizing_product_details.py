@@ -7,15 +7,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from transformers import pipeline
 
 
-print('*'*100)
-url = input("Enter target website url: ")
-print('*'*100)
+# print('*'*100)
+# url = input("Enter target website url: ")
+# print('*'*100)
 
 driver = webdriver.Chrome(service=ChromeService(
     ChromeDriverManager().install()))
 
-if url == '':
-    url = "https://www.amazon.com/dp/B09B9TB61G?th=1"
+url = "https://www.amazon.com/dp/B09B9TB61G?th=1"
 
 print('*'*100)
 print("URL: " + url)
