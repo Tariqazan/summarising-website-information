@@ -38,7 +38,7 @@ def extract_relevant_information(url):
 
 
 extract_relevant_information = extract_relevant_information(url)
-print(extract_relevant_information)
+print("Description", extract_relevant_information)
 
 
 sentence_list = nltk.sent_tokenize(extract_relevant_information)
